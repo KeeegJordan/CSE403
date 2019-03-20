@@ -81,12 +81,16 @@ That being said, since you need to contact us anyway, we strongly recomment tryi
    Choose "Only Select Repositories" to install it to a repository of your
    choice. (For development, I created a new repo that doesn't actually have any
    code.)
+3. Click on "Generate private key". Save the resultant file as `github.pem` in
+   this directory.
+4. Take note of the app ID. We'll need it later.
 
 ##### Run locally
 1. Get the code
     * Clone this repo and run `npm install` Information page) (install npm first if you havn't, available at here:          	  https://www.npmjs.com/get-npm)
 2. Copy the `.env-sample` file to `.env`. In the newly-created `.env` file,
-   replace "my_github_secret" with your actual github webhook secret.
+   replace "my_github_secret" with your actual github webhook secret. Replace
+   "12345" with your github app ID noted above.
 3. Start the dev environment by running `npm run dev`
 
 ##### Enable Q Review
